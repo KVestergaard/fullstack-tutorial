@@ -6,7 +6,7 @@ class LaunchAPI extends RESTDataSource {
         this.baseURL = 'https://api.spacexdata.com/v2/';
     }
 
-    async GetAllLaunches() {
+    async getAllLaunches() {
         const response = await this.get('launches');
         return Array.isArray(response) ?
             response.map(launch => this.launchReducer(launch)) :

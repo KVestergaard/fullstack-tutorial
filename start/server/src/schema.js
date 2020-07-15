@@ -34,7 +34,6 @@ const typeDefs = gql`
 
     enum PatchSize {
         SMALL
-        MEDIUM
         LARGE
     }
 
